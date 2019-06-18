@@ -11,7 +11,7 @@ g = GameOfLife(30,30,r=False)
 g.loadPattern("pulsar")
 
 #2 parameters is the x and y coordinate where to place
-g.loadPattern("glider",10,10)
+g.loadPattern("glider",10,10) #TODO it can be out of range
 ```
 
 ## Link
