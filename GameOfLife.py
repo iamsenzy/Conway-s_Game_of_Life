@@ -90,7 +90,6 @@ class GameOfLife:
                 if havePos:
                     for index, val in enumerate(x):
                         if centerx + xpos + j >= self.cols or centery + ypos + index >= self.rows:
-                            print((centerx + xpos + j, centery + ypos + index), (self.cols, self.rows))
                             print("Table size too small")
 
                         if (newx == 42 and newy == 42) :
@@ -103,7 +102,6 @@ class GameOfLife:
                                 self.grid[newx + j][newy + index] = 0
                             elif val == '*':
                                 self.grid[newx + j][newy + index] = 1
-
                     j += 1
 
 
